@@ -198,6 +198,7 @@ class Rtc_Pcf8563 {
     void getDate();  // unsafe, don't use
 
     private:
+    TwoWire *Wire;
     /* methods */
     byte decToBcd(byte value);
     byte bcdToDec(byte value);
